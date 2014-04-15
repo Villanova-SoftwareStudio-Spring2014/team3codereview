@@ -27,7 +27,6 @@ public class Exercise1HelperMethods {
 
                 }
             }
-            System.out.println(letterCount);
         }
         catch (IOException e) {
             System.out.println("Error - File does not exist");

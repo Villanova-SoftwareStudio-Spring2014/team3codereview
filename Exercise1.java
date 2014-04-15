@@ -11,15 +11,15 @@ public class Exercise1 {
      *            input file.
      */
     public static void main(String[] args) {
-
-        Path textFile = Paths.get("xanadu.txt");
+        final String filename = "xanadu.txt";
+        Path textFile = Paths.get(filename);
 
         Exercise1HelperMethods methods = new Exercise1HelperMethods();
 
         if (methods.isAccessible(textFile) && Files.isReadable(textFile)
                 && methods.isCharacter(args)) {
-            
-            methods.countOccurrences(args, textFile);
+
+            System.out.println(methods.countOccurrences(args, textFile));
         }
 
     }
